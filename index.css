@@ -285,3 +285,30 @@ select {
     background-color: hsl( var(--clr-white) / 1);
     
 }
+
+.number-indicators > button{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    cursor: pointer;
+    padding: 0 2em;
+    background-color: hsl( var(--clr-dark) );
+    color: hsl( var(--clr-white) / 1);
+    border-color: hsl( var(--clr-white) / .25);
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.number-indicators > button:hover,
+.number-indicators > button:focus {
+    border-color: hsl( var(--clr-white) / 1);
+}
+
+.number-indicators > [aria-selected="true"]{
+    background-color: hsl( var(--clr-white) / 1);
+    color:hsl( var(--clr-dark) );
+
+}
