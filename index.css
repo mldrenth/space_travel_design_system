@@ -241,16 +241,26 @@ select {
     margin-right: .5em;
 }
 
-.underline-indicators > * {
+.underline-indicators > *{
     padding: var(--underline-gap, 1rem) 0;
+    border: 0;
+    cursor: pointer;
     border-bottom: .2rem solid hsl( var(--clr-white) / 0) ;
 }
 
 .underline-indicators li:hover,
-.underline-indicators li:focus {
+.underline-indicators li:focus, 
+.underline-indicators button:hover,
+.underline-indicators button:focus{
     border-color: hsl( var(--clr-white) / .5);
 }
 
-.underline-indicators > .active{
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"]{
     border-color: hsl( var(--clr-white) / 1);
+    color: hsl( var(--clr-white) / 1)
+}
+
+.tab-list {
+    --gap: 2rem;
 }
